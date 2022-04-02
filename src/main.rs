@@ -1,6 +1,5 @@
 extern crate core;
 
-
 mod guessing_game;
 
 fn main() {

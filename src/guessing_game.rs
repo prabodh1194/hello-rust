@@ -1,5 +1,5 @@
-use std::io::stdin;
 use rand::Rng;
+use std::io::stdin;
 
 pub fn guessing_game() {
     println!("Guess the number game!");
@@ -10,8 +10,7 @@ pub fn guessing_game() {
 
     loop {
         let mut guess = String::new();
-        stdin().read_line(&mut guess)
-            .expect("Failed to read line");
+        stdin().read_line(&mut guess).expect("Failed to read line");
 
         let guess: i32 = match guess.trim().parse() {
             Ok(num) => num,
